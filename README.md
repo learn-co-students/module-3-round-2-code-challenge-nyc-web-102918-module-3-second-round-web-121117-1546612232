@@ -92,7 +92,7 @@ The html should look something like:
 
 ### Step 3 - Edit Beer Details
 
-When looking at the details of a beer, I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database.
+When looking at the details of a beer, I can edit the current description of a beer. Clicking the 'Save' button will save any changes added to the description in the database. The edited beer should also update the DOM. For example, if I update the details of "Beer A" then click on another beer, when I go back to "Beer A", the description should be updated.
 
 To update a beer you'll need to make a PATCH request
 * **Route:** PATCH `http://localhost:3000/beers/:id`
