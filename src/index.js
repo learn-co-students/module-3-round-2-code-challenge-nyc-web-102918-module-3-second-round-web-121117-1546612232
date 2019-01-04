@@ -42,21 +42,18 @@ const beerStuff = document.querySelector('#beer-detail')
         headers: {
            'Accept': 'application/json',
            'Content-Type': 'application/json'
-         },
+        },
          body: JSON.stringify({
            description: editText
          })
-      })
-       .then(function(response){
-         return response.json()
-       })
-       .then(function(beerData){
-         // console.log(beerData.description)
-         editText.innerHTML = `${beerData.description}`
-       })
-
-
-
+        })
+         .then(function(response){
+           return response.json()
+         })
+         .then(function(beerData){
+           // console.log(beerData.description)
+           editText.innerHTML = `${beerData.description}`
+         })
     }
   })
 
